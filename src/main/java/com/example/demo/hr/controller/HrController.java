@@ -28,9 +28,17 @@ public class HrController {
 	@Setter(onMethod_=@Autowired)
 	private HrService service;
 	
-	@RequestMapping("employee.do")
+	
+	@RequestMapping("employee")
+	public String employee (Model model, @RequestParam Map<String, Object> paramMap, HttpServletRequest request,
+			HttpServletResponse response, HttpSession session) {
+		
+		return "/EmpList";
+	}
+	
+	@RequestMapping("employeeList.do")
 	@ResponseBody
-	public Map<String, Object> Employee (Model model, @RequestParam Map<String, Object> paramMap, HttpServletRequest request,
+	public Map<String, Object> EmployeeList (Model model, @RequestParam Map<String, Object> paramMap, HttpServletRequest request,
 			HttpServletResponse response, HttpSession session)throws Exception {
 		
 		Map<String , Object> returnMap = new HashMap<String, Object>();
