@@ -12,7 +12,11 @@
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css">
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/resources/include/js/commmon.js"></script>
 <script type="text/javascript">
+var pageSize = 5;
+var pageBlockPage=10;
+
 $(document).ready(function(){
 	var param ={};
 	$.ajax({
@@ -39,7 +43,7 @@ $(document).ready(function(){
 </script>
 <body>
 <div>
-	<h1>ERD</h1>
+	<h1>ERP</h1>
 </div>
 
 <div>
